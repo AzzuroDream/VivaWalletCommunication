@@ -1,0 +1,15 @@
+*.exe
+*.zip
+Settings.ini
+node_modules
+coverage
+.vscode
+logs
+src/_dbfunctions
+src/_hybridfunctions
+src/_tcpcom
+src/_constants.js
+server.txt
+*.gz
+vivawalletComunication-*.txt*
+*-audit.json
