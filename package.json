@@ -23,7 +23,7 @@
     ]
   },
   "keywords": [],
-  "author": "",
+  "author": "nsys",
   "license": "ISC",
   "dependencies": {
     "ini": "^4.1.1",
