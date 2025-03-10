@@ -14,7 +14,7 @@ const cmdENDOFDAY = 21;
 const cmdVOIDPREAUTHORIZATION = 24;
 const cmdGETLASTTRANSACTIONSTATUS = 30;
 
-module.exports = { ppp
+module.exports = {
   FS,
   STX,
   ETX,
