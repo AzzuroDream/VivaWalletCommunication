@@ -8,6 +8,7 @@
     "dev": "nodemon ./src/vivawalletcommunication.js",
     "pack": "pkg -t node14-win ./src/vivawalletcommunication.js",
     "linter": "npx semistandard --env jest",
+    "fixer": "npx semistandard --fix",
     "test": "npx jest --coverage"
   },
   "jest": {
