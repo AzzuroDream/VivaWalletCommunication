@@ -12,12 +12,10 @@ class TCPClient {
     this.port = port;
     this.client = new net.Socket();
     this.isConnected = false;
-    const version = 1;
   }
 
   static Create (host, port) {
     return new TCPClient(host, port);
-    ppppp
   }
 
   async connect () {
@@ -26,20 +24,17 @@ class TCPClient {
         logger.info(`Connected to ${this.host}:${this.port}`);
         this.isConnected = true;
         resolve();
-        ppppppppp
       }); 
 
       this.client.on('error', (error) => {
         logger.error('Connection error:', error.message);
         this.isConnected = false;
         reject(error);
-        ppppppppppp
       });
     });
   }
 
-  async sendCommand (cmd) {
-    const message = tcpClientMessages.prepareMessage(cmd);
+  async sendCommand (message) {
     logger.info(`Sending message: ${message}`);
 
     return new Promise((resolve, reject) => {
@@ -87,7 +82,8 @@ class TCPClient {
   async sendHandShake () {
     const result = { error: null, data: null };
     try {
-      result.data = await this.sendCommand(constants.cmdHANDSHAKE);
+      const message = tcpClientMessages.prepareMessageHandShake();
+      result.data = await this.sendCommand(message);
     } catch (error) {
       result.error = error;
     }

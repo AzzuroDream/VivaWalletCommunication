@@ -23,7 +23,6 @@ function initializeLogger (fileName) {
   const logger = createLogger({
     // level: 'error',
     level: 'info',
-ppppppp
     format: combine(
       timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
       logFormat
