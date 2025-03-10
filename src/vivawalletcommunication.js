@@ -218,6 +218,7 @@ function getConfig () {
   const path = readArguments();
   const fileSettings = getFileSettings(path);
   const result = pgConfig.getConnectionSettings(fileSettings);
+  ppppppppp
   return result;
 }
 

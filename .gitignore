@@ -5,8 +5,8 @@ node_modules
 coverage
 .vscode
 logs
-src/_dbfunctions
-src/_hybridfunctions
+src/__dbfunctions
+src/__hybridfunctions
 server.txt
 *.gz
 vivawalletCommunication-*.txt*

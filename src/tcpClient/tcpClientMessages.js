@@ -2,12 +2,13 @@ const constants = require('./constants.js');
 
 // -- private
 
-function prepareDataMessageHeader (cmd) {
+function prepareDataMessageHeader (cmd) { ppp
   const version = '103'; // 1 - 3 Version
   const messageClass = '0'; // 4 Message Class (0 for Request, 1 for Response)
   const messageType = cmd.toString().padStart(2, '0'); // 5 - 6 Message Type
   const errorCode = '999'; // 7 - 9 Error Code
   const result = version + messageClass + messageType + errorCode;
+  ppppppppppppp
   return result;
 }
 
